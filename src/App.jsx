@@ -121,9 +121,8 @@ class App extends Component {
                       <strong>Welcome to Very Simple Todo App!</strong><br />
                       Get started now by adding a new todo on the left.
                     </div>) :
-                    (this.state.todoList.map((list, index) => (
+                    (this.state.todoList.map(list => (
                       <Todo
-                        id={ index }
                         onDelete={ this.deleteHandler }
                         onSave={ this.saveHandler }
                         key={ list.id }
