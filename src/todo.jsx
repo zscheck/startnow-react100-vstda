@@ -83,8 +83,9 @@ export class Todo extends React.Component {
         <input
           type='checkbox'
           aria-label='Checkbox for following text input'
+          className='strikethrough'
         />
-        <strong>{this.state.text}</strong>
+        <span><strong>{this.state.text}</strong></span>
         <div
           className='btn-group btn-group-sm float-right'
           role='group'
